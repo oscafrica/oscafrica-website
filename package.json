@@ -1,0 +1,127 @@
+{
+  "name": "oscafrica.org",
+  "version": "0.1.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@storybook/addon-storysource": "^5.3.19",
+    "classnames": "2.2.6",
+    "gatsby": "2.18.6",
+    "gatsby-plugin-gtag": "^1.0.13",
+    "gatsby-plugin-manifest": "2.2.27",
+    "gatsby-plugin-offline": "3.0.21",
+    "gatsby-plugin-postcss": "2.1.15",
+    "gatsby-plugin-purgecss": "4.0.1",
+    "gatsby-plugin-react-helmet": "3.1.14",
+    "gatsby-plugin-sitemap": "^2.4.11",
+    "graphql": "14.5.8",
+    "opencollective": "1.0.3",
+    "prop-types": "15.7.2",
+    "react-datepicker": "^2.16.0",
+    "react-dom": "16.11.0",
+    "react-helmet": "5.2.1"
+  },
+  "keywords": [
+    "gatsby",
+    "tailwind",
+    "tailwindcss",
+    "purgecss"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "analyze:lint": "eslint --ext .jsx --ext .js src",
+    "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
+    "analyze": "npm run analyze:lint && npm run analyze:prettier",
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "fix:lint": "eslint --ext .jsx --ext .js src --fix",
+    "fix:prettier": "prettier --write '**/*.{js,css,md,json}'",
+    "fix": "npm run fix:lint && npm run fix:prettier",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "commit": "git-cz",
+    "storybook": "start-storybook",
+    "cypress:open": "cross-env TZ=UTC cypress open",
+    "cypress:run": "cross-env TZ=UTC cypress run",
+    "test": "nyc --silent cross-env npm run test:unit && npm run test:e2e",
+    "test:unit": "jest",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cypress:run"
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^1.14.0",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/react": "5.2.8",
+    "@typescript-eslint/eslint-plugin": "2.7.0",
+    "@typescript-eslint/parser": "2.7.0",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-istanbul": "^5.2.0",
+    "babel-preset-gatsby": "^0.2.36",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "commitizen": "^4.1.2",
+    "coveralls": "^3.1.0",
+    "cross-env": "^6.0.3",
+    "cssnano": "^4.1.10",
+    "cypress": "^4.10.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "dotenv": "8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-react-app": "5.0.2",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-flowtype": "4.4.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "husky": "^3.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "istanbul-lib-coverage": "^2.0.5",
+    "jest": "^24.9.0",
+    "jest-environment-enzyme": "^7.1.2",
+    "jest-enzyme": "^7.1.2",
+    "lint-staged": "^9.5.0",
+    "nyc": "^14.1.1",
+    "prettier": "1.19.1",
+    "react": "^16.13.1",
+    "react-is": "^16.13.1",
+    "start-server-and-test": "^1.11.2",
+    "tailwindcss": "1.1.3",
+    "typescript": "3.7.2"
+  },
+  "nyc": {
+    "report-dir": "coverage/cypress-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscafrica/oscafrica.org"
+  },
+  "bugs": {
+    "url": "https://github.com/oscafrica/oscafrica.org/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "npm run fix:lint",
+    "*.{js,json,md,graphql}": [
+      "npm run fix:prettier",
+      "git add"
+    ]
+  }
+}
