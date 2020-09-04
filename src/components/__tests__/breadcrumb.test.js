@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 
-import Breadcrumb from "../breadcrumb";
+import Breadcrumb from "../Breadcrumb";
 
 let wrapper;
 

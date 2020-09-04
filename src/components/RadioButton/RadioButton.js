@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import styles from "./style.module.css";
+import styles from "./RadioButton.module.css";
 import PropTypes from "prop-types";
 
 function RadioButton({ value, onChange, label, style, onBlur, name, children, className, checked, ...props }) {

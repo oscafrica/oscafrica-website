@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { mount } from "enzyme";
 
-import CheckBox from "../checkBox";
+import CheckBox from "../CheckBox/CheckBox";
 
 class CheckBoxWrapper extends Component {
   state = {
