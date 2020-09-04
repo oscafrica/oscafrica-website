@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 
-import Nav from "../nav";
+import Nav from "../Nav";
 
 let wrapper;
 

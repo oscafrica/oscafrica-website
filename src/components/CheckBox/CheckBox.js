@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import styles from "./style.module.css";
+import styles from "./Checkbox.module.css";
 import PropTypes from "prop-types";
 
 function CheckBox({ onChange, style, disabled, children, className, checked, ...props }) {

@@ -1,5 +1,5 @@
 import React from "react";
-import RadioButton from ".";
+import RadioButton from "./RadioButton";
 
 export default {
   title: "RadioButton",

@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import styles from "./style.module.css";
+import styles from "./TextBox.module.css";
 
 /**
  * renders a text box following the detailed mock in the style guide

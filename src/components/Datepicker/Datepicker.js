@@ -2,9 +2,9 @@ import React from "react";
 import Picker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
-import classes from "./style.module.css";
+import classes from "./Datepicker.module.css";
 import calendarIcon from "./calendar-icon.svg";
-import { TextBox } from "../textBox";
+import { TextBox } from "../TextBox/TextBox";
 
 const isSunday = date => date.getDay() === 0;
 
