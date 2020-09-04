@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import style from "./style.module.css";
+import style from "./SearchBar.module.css";
 import classNames from "classnames";
 
 import cancelImg from "./searchbar-cancel.png";

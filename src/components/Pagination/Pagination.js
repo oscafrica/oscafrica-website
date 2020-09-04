@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-import classes from "./style.module.css";
+import classes from "./Pagination.module.css";
 
 const Pagination = ({ currentPage, totalCount, onChange, resultsPerPage }) => {
   const noOfPages = Math.ceil(totalCount / resultsPerPage);

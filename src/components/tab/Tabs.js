@@ -2,7 +2,7 @@ import React, { Children, useEffect, useState } from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 
-import classes from "./style.module.css";
+import classes from "./Tab.module.css";
 
 const noob = () => {};
 

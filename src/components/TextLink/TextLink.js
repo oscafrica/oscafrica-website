@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import styles from "./style.module.css";
+import styles from "./TextLink.module.css";
 
 /**
  * renders an anchor tag following the detailed mock in the style guide

@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 
-import styles from "./style.module.css";
+import styles from "./Button.module.css";
 
 /**
  * renders a button following the detailed mock in the style guide

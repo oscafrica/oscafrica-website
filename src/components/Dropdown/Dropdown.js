@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from "react";
 import PropTypes from "prop-types";
-import style from "./style.module.css";
+import style from "./Dropdown.module.css";
 import classNames from "classnames";
 
 import caretImg from "./dropdown-caret.png";

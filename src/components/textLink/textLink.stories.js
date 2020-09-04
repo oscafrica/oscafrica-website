@@ -1,5 +1,5 @@
 import React from "react";
-import TextLink, { linkTypes } from ".";
+import TextLink, { linkTypes } from "./TextLink";
 
 export default {
   title: "TextLink",

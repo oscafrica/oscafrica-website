@@ -1,5 +1,5 @@
 import React from "react";
-import { TextBox, TextArea } from ".";
+import { TextBox, TextArea } from "./TextBox";
 
 export default {
   title: "TextBox",

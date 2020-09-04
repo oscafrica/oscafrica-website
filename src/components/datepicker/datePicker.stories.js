@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DatePicker from ".";
+import DatePicker from "./Datepicker";
 
 export default {
   title: "DatePicker",
