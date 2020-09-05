@@ -77,3 +77,32 @@ embed {
   border-top: 1px dashed #c4c4c4;
   margin-left: 20px;
 }
+
+.__banner_bg1 {
+  background-image: url("../images/banner1.png");
+}
+.__banner_bg2 {
+  background-image: url("../images/community.png");
+}
+.__banner_bg3 {
+  background-image: url("../images/team.png");
+}
+
+.__banner_bg1,
+.__banner_bg3 .__banner_bg1 {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.__blue-background {
+  background: #0a2237d5;
+}
+.__community-background {
+  /* background: #5a75ab; */
+  background-color: rgb(90, 117, 171, 0.5);
+}
+.__team-background {
+  /* background: #eb9128; */
+  background-color: rgb(235, 145, 40, 0.5);
+}

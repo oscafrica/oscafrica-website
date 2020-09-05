@@ -1,14 +1,14 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 
-import logo from "../images/osca-logo.png";
+import logo from "../images/osca-white-logo.png";
 
 function Nav() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="z-20 w-full bg-dark-blue-primary fixed top-0 left-0 px-2 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-1">
-      <div className="flex flex-wrap items-center justify-between max-w-8xl mx-auto p-2 lg:py-8">
+    <header className="z-20 w-full fixed top-0 left-0 px-2 sm:px-8 lg:px-16 xl:px-20 2xl:px-64 py-1">
+      <div className="flex flex-wrap items-center justify-between lg:justify-start max-w-8xl mx-auto p-2 lg:py-8">
         <Link className="z-20 flex items-center no-underline text-white" to="/">
           <img alt="Open Source Community Africa Logo." className="block mx-auto w-12" src={logo} />
         </Link>
@@ -40,29 +40,25 @@ function Nav() {
         <nav
           className={`${
             isExpanded ? "block" : "hidden"
-          } flex flex-col py-24 min-h-screen min-w-full bg-dark-blue-primary text-center lg:py-0 lg:block lg:flex-row lg:items-center lg:w-auto lg:min-h-0 lg:min-w-0`}
+          } flex flex-col py-24 min-h-screen min-w-full text-center lg:py-0 lg:block lg:flex-row lg:items-center lg:w-auto lg:min-h-0 lg:min-w-0`}
         >
           {[
             {
-              route: "#",
-              title: "About"
+              route: "#team",
+              title: "Team"
             },
             {
-              route: "#",
-              title: "Demo"
+              route: "#community",
+              title: "Community"
             },
             {
-              route: "#",
-              title: "Demo"
-            },
-            {
-              route: "#",
-              title: "Demo"
+              route: "#blog",
+              title: "Blog"
             }
           ].map(link => (
             <a
               className="block mt-0 mb-auto no-underline text-white text-xl lg:inline-block lg:-my-2 lg:ml-8 lg:text-sm uppercase"
-              key={link.title}
+              key={link.title + Math.random()}
               href={link.route}
             >
               {link.title}
