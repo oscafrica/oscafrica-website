@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 
-import logo from "../images/osca-logo.png";
+import logo from "../assets/images/osca-logo.png";
 
 function Nav() {
   const [isExpanded, toggleExpansion] = useState(false);
