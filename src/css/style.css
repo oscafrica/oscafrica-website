@@ -80,17 +80,22 @@ embed {
 
 .__banner_bg1 {
   background-image: url("../images/banner1.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .__banner_bg2 {
   background-image: url("../images/community.png");
+  /* filter: grayscale(100%); */
 }
 .__banner_bg3 {
   background-image: url("../images/team.png");
+  /* filter: grayscale(100%); */
 }
-
-.__banner_bg1,
-.__banner_bg3 .__banner_bg1 {
-  background-position: top;
+.__banner_bg3,
+.__banner_bg2 {
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -98,11 +103,39 @@ embed {
 .__blue-background {
   background: #0a2237d5;
 }
+
+.__blue-background:hover {
+  background: rgba(10, 34, 55, 0.9);
+  transition: all linear 0.5s;
+}
+
+.__blue-background > div {
+  margin-top: 50vh;
+}
+
 .__community-background {
-  /* background: #5a75ab; */
   background-color: rgb(90, 117, 171, 0.5);
 }
+
+.__community-background:hover {
+  background-color: rgb(90, 117, 171, 0.85);
+  transition: all linear 0.5s;
+}
+
+.__community-background > div,
+.__team-background > div {
+  margin-top: calc(25vh-25px);
+}
 .__team-background {
-  /* background: #eb9128; */
   background-color: rgb(235, 145, 40, 0.5);
+}
+
+.__team-background:hover {
+  background-color: rgb(235, 145, 40, 0.85);
+  transition: all linear 0.5s;
+}
+
+.__check_out:hover > svg {
+  margin-left: 10px;
+  transition: all linear 0.5s;
 }
