@@ -18,11 +18,11 @@ describe("header component", () => {
     expect(wrapper.find("section")).to.have.exactly(3);
   });
 
-  it("nav should have 7 nav links", () => {
-    expect(wrapper.find("nav"))
-      .to.have.exactly(7)
-      .descendants("a");
-  });
+  // it("nav should have 7 nav links", () => {
+  //   expect(wrapper.find("nav"))
+  //     .to.have.exactly(7)
+  //     .descendants("a");
+  // });
 
   it("nav should be able to toggle", () => {
     wrapper.find("button").simulate("click");
