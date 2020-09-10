@@ -53,11 +53,11 @@ function Nav() {
             },
             {
               route: "#",
-              title: "Demo"
+              title: "Demo 2"
             },
             {
               route: "#",
-              title: "Demo"
+              title: "Demo 3"
             }
           ].map(link => (
             <a
