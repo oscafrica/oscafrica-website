@@ -43,11 +43,8 @@
     "serve": "gatsby serve",
     "commit": "git-cz",
     "storybook": "start-storybook",
-    "cypress:open": "cross-env TZ=UTC cypress open",
-    "cypress:run": "cross-env TZ=UTC cypress run",
-    "test": "nyc --silent cross-env npm run test:unit && npm run test:e2e",
-    "test:unit": "jest",
-    "test:e2e": "start-server-and-test dev http://localhost:8000 cypress:run"
+    "test": "nyc --silent cross-env npm run test:unit",
+    "test:unit": "jest"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^1.14.0",
