@@ -8,9 +8,13 @@ function Nav() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="z-20 w-full fixed bg-white md:relative lg:fixed top-0 left-0 px-2 sm:px-8 lg:px-16 xl:px-20 2xl:px-64 py-1">
-      <div className="flex flex-wrap items-center justify-between md:justify-start max-w-8xl mx-auto p-2 lg:py-8">
-        <Link className="z-20 flex items-center no-underline text-white md:hidden lg:block block" to="/">
+    <header
+      className={`${
+        isExpanded ? "__overlay md:bg-white" : ""
+      } z-20 w-full fixed md:bg-white md:relative  top-0 left-0 px-2 sm:px-8 lg:px-16 xl:px-20 2xl:px-64`}
+    >
+      <div className="flex flex-wrap items-center justify-between lg:fixed md:justify-start max-w-8xl mx-auto p-2 lg:py-8">
+        <Link className="z-20 flex items-center no-underline text-white md:hidden lg:block " to="/">
           <img alt="Open Source Community Africa Logo." className="block mx-auto w-12" src={logo} />
         </Link>
         <Link className="z-20 flex items-center no-underline text-white md:block hidden lg:hidden" to="/">
@@ -43,7 +47,7 @@ function Nav() {
 
         <nav
           className={`${
-            isExpanded ? "block" : "hidden bg-primary"
+            isExpanded ? "block" : "hidden "
           } flex flex-col py-24 min-h-screen min-w-full text-center md:py-0 md:block md:flex-row md:items-center md:w-auto md:min-h-0 md:min-w-0`}
         >
           {[

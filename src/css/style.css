@@ -139,3 +139,7 @@ embed {
   margin-left: 10px;
   transition: all linear 0.5s;
 }
+
+.__overlay {
+  background: #283756f2;
+}
