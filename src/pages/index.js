@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/SEO/seo";
 
 import Nav from "../components/nav";
-import Header from "../components/header";
+import Header from "../components/HomeBody";
 import Footer from "../components/footer";
 
 function IndexPage() {

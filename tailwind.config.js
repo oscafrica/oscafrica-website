@@ -13,6 +13,9 @@ module.exports = {
       spacing: {
         "oc-10": "10px"
       },
+      height: {
+        "half-screen": "50vh"
+      },
       colors: {
         white: "#FFFFFF",
         "dark-blue": {

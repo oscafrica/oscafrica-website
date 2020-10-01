@@ -4,12 +4,12 @@ describe("home page", () => {
     cy.visit("/");
   });
 
-  it('should have text "Open Source Community Africa"', () => {
-    cy.contains("Open Source Community Africa");
+  it('should have text "The Next Billion Creators"', () => {
+    cy.contains("The Next Billion Creators");
   });
 
   it("header should have 8 anchor tags", () => {
-    cy.get("header a").should("have.length", 8);
+    cy.get("header a").should("have.length", 6);
   });
 
   it("footer should have 10 anchor tags", () => {
