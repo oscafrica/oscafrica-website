@@ -1,11 +1,10 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEO from "../components/SEO/seo";
 
-import Nav from "../components/nav";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Nav from "../components/Nav";
+import Header from "../components/HomeBody";
 
 function IndexPage() {
   return (
@@ -13,7 +12,6 @@ function IndexPage() {
       <SEO keywords={["Open Source Community Africa", "OSCA", "Open Source Festival", "OSF"]} title="Home" />
       <Nav />
       <Header />
-      <Footer />
     </Layout>
   );
 }

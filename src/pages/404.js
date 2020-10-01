@@ -1,10 +1,10 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEO from "../components/SEO/seo";
 
-import Nav from "../components/nav";
-import Footer from "../components/footer";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 function NotFoundPage() {
   return (
