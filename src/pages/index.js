@@ -5,7 +5,6 @@ import SEO from "../components/SEO/seo";
 
 import Nav from "../components/nav";
 import Header from "../components/HomeBody";
-import Footer from "../components/footer";
 
 function IndexPage() {
   return (
@@ -13,7 +12,6 @@ function IndexPage() {
       <SEO keywords={["Open Source Community Africa", "OSCA", "Open Source Festival", "OSF"]} title="Home" />
       <Nav />
       <Header />
-      <Footer />
     </Layout>
   );
 }
