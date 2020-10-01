@@ -4,8 +4,8 @@ describe("home page", () => {
     cy.visit("/");
   });
 
-  it('should have text "The Next Billion Creators"', () => {
-    cy.contains("The Next Billion Creators");
+  it('should have text "A community of creative minds driving the Open Source movement in Africa"', () => {
+    cy.contains("A community of creative minds driving the Open Source movement in Africa");
   });
 
   it("header should have 8 anchor tags", () => {
