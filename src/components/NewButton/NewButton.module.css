@@ -1,0 +1,31 @@
+.button {
+    display:flex;
+    align-items: center;
+    color: #ffffff;
+    font-size:0.875rem;
+    border-bottom: 2px solid transparent;
+    padding:0.5rem;
+    padding-left:0rem;
+    transition: .3s ease-in-out all;
+}
+
+.button:hover {
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.icon {
+    padding-left: 0.5rem;
+    transition: .3s ease-in-out all;
+}
+
+.button:hover .icon {
+    padding-left: 1rem;
+}
+
+.button:focus, button:active {
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.button:focus .icon, .button:active .icon {
+    padding-left: 1rem;
+}
