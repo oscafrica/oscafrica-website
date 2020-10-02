@@ -2,9 +2,9 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 
 import logo from "../assets/images/osca-logo.png";
-import oscalogo from "../assets/images/osf-sustain.jpg";
+import PropTypes from "prop-types";
 
-function Nav() {
+function Nav(props) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
@@ -16,9 +16,6 @@ function Nav() {
       <div className="flex flex-wrap items-center justify-between lg:fixed md:justify-start max-w-8xl mx-auto p-2 lg:py-8">
         <Link className="z-20 flex items-center no-underline text-white md:hidden lg:block " to="/">
           <img alt="Open Source Community Africa Logo." className="block mx-auto w-12" src={logo} />
-        </Link>
-        <Link className="z-20 flex items-center no-underline text-white md:block hidden lg:hidden" to="/">
-          <img alt="Open Source Community Africa Logo." className="block mx-auto w-12" src={oscalogo} />
         </Link>
 
         <button
@@ -52,24 +49,20 @@ function Nav() {
         >
           {[
             {
-              route: "#",
-              title: "About"
-            },
-            {
-              route: "#route",
+              route: "team",
               title: "Team"
             },
             {
-              route: "#community",
+              route: "community",
               title: "Community"
             },
             {
-              route: "#blog",
+              route: "blog",
               title: "Blog"
             }
           ].map(link => (
             <a
-              className="block mt-0 mb-auto no-underline text-white text-xl md:inline-block md:-my-2 md:ml-8 md:text-sm uppercase md:text-black lg:text-white"
+              className={`block mt-0 mb-auto no-underline text-xl md:inline-block md:-my-2 md:ml-8 md:text-sm uppercase ${props.textColor}`}
               key={link.title}
               href={link.route}
             >
@@ -81,5 +74,13 @@ function Nav() {
     </header>
   );
 }
+
+Nav.propTypes = {
+  textColor: PropTypes.string
+};
+
+Nav.defaultProps = {
+  textColor: ""
+};
 
 export default Nav;

@@ -104,6 +104,10 @@ embed {
   background: #0a2237d5;
 }
 
+.__white-background {
+  background: #fff;
+}
+
 .__blue-background:hover {
   background: rgba(10, 34, 55, 0.9);
   transition: all linear 0.5s;

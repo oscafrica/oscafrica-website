@@ -4,14 +4,14 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO/seo";
 
 import Nav from "../components/Nav";
-import Header from "../components/HomeBody";
+import HomeBody from "../components/HomeBody";
 
 function IndexPage() {
   return (
     <Layout>
       <SEO keywords={["Open Source Community Africa", "OSCA", "Open Source Festival", "OSF"]} title="Home" />
-      <Nav />
-      <Header />
+      <Nav textColor={"text-white"} />
+      <HomeBody />
     </Layout>
   );
 }
