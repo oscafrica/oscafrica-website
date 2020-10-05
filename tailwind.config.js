@@ -6,7 +6,8 @@ module.exports = {
       display: ["source sans", "avenir", "gotham", "ubuntu"],
       body: ["source sans", "avenir", "gotham", "ubuntu"],
       avenir: ["avenir"],
-      ubuntu: ["ubuntu"]
+      ubuntu: ["ubuntu"],
+      gotham: ["gotham"]
     },
     prefix: "oc-",
     extend: {
