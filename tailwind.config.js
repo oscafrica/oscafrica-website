@@ -62,6 +62,10 @@ module.exports = {
       },
       lineHeight: {
         text: "22px"
+      },
+      container: {
+        padding: "5rem",
+        center: true
       }
     }
   },

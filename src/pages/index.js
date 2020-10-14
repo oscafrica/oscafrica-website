@@ -10,7 +10,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO keywords={["Open Source Community Africa", "OSCA", "Open Source Festival", "OSF"]} title="Home" />
-      <Nav textColor={"text-white"} />
+      <Nav textColor={"text-white"} navBarPosition={"fixed"} />
       <HomeBody />
     </Layout>
   );

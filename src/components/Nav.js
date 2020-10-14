@@ -13,7 +13,9 @@ function Nav(props) {
         isExpanded ? "__overlay md:bg-white" : ""
       } z-20 w-full fixed md:bg-white md:relative  top-0 left-0 px-2 sm:px-8 lg:px-16 xl:px-20 2xl:px-64`}
     >
-      <div className="flex flex-wrap items-center justify-between lg:fixed md:justify-start max-w-8xl mx-auto p-2 lg:py-8">
+      <div
+        className={`flex flex-wrap items-center justify-between ${props.navBarPosition} md:justify-start max-w-8xl mx-auto p-2 lg:py-8`}
+      >
         <Link className="z-20 flex items-center no-underline text-white md:hidden lg:block " to="/">
           <img alt="Open Source Community Africa Logo." className="block mx-auto w-12" src={logo} />
         </Link>
@@ -76,11 +78,13 @@ function Nav(props) {
 }
 
 Nav.propTypes = {
-  textColor: PropTypes.string
+  textColor: PropTypes.string,
+  navBarPosition: PropTypes.string
 };
 
 Nav.defaultProps = {
-  textColor: ""
+  textColor: "",
+  navBarPosition: ""
 };
 
 export default Nav;
